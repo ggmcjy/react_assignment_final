@@ -5,7 +5,7 @@ export default class Register extends Component {
     render() {
         return (
             <View>
-                <Text> textInComponent </Text>
+                <Text> Register </Text>
             </View>
         )
     }
