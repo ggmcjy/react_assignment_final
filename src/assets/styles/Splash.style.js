@@ -9,7 +9,6 @@ export default StyleSheet.create({
             flex:1,
             justifyContent:'center',
             alignItems:'center'
-
         },
         main_center:{
             flex:1,
@@ -33,6 +32,5 @@ export default StyleSheet.create({
             fontSize:30,
             margin:5,
             color: color.background,
-        },
-        
+        },  
 });

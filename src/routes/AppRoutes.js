@@ -34,7 +34,7 @@ export class AppRoutes extends Component {
         }, 3000);
     };
     render() {
-        const { isLoading } = this.props;
+        const { isLoading } = this.state;
         const { isLoggedIn } = this.props;
         return (
 
@@ -47,8 +47,8 @@ export class AppRoutes extends Component {
                     <Home />
                 ) : (
                             <Stack.Navigator>
-                                <Stack.Screen name={'Register'} component={Register} />
                                 <Stack.Screen name={'Login'} component={Login} />
+                                <Stack.Screen name={'Register'} component={Register} />
                             </Stack.Navigator>
                         )}
             </NavigationContainer>
