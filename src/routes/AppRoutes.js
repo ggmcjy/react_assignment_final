@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import Home from '../routes/BottonNav';
 import Login from '../components/screens/Login';
 import Register from '../components/screens/Register';
-
+import Forget from '../components/screens/Forget';
 import Splash from '../components/screens/Splash';
 
 import { connect } from 'react-redux';
@@ -46,9 +46,10 @@ export class AppRoutes extends Component {
                 ) : isLoggedIn ? (
                     <Home />
                 ) : (
-                            <Stack.Navigator>
+                            <Stack.Navigator screenOptions={{ headerShown: false }}>
                                 <Stack.Screen name={'Login'} component={Login} />
                                 <Stack.Screen name={'Register'} component={Register} />
+                                <Stack.Screen name={'Forget'} component={Forget} />
                             </Stack.Navigator>
                         )}
             </NavigationContainer>
