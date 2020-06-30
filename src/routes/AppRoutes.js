@@ -31,7 +31,7 @@ export class AppRoutes extends Component {
             this.setState({
                 isLoading: false,
             });
-        }, 3000);
+        },1000);
     };
     render() {
         const { isLoading } = this.state;
